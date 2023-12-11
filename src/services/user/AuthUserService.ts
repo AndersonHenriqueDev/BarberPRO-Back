@@ -35,7 +35,7 @@ class AuthUserService{
                 name: user.name,
                 email: user.email,
             },
-            process.env.JWT_SECRET,
+            'a593b5ffcbd2f783d02c634cbb39506e',
             {
                 subject: user.id,
                 expiresIn: '30d'         
