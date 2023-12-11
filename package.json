@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
+    "postinstall": "prisma generate",
     "vercel-build": "npx prisma migrate deploy"
   },
   "devDependencies": {
